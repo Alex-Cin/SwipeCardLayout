@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF5722"
+
+        android:gravity="center"
+        android:text="堆栈式布局"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    <github.alex.swipecardlayout.SwipeCardLayout
+        android:id="@+id/scl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iv_foot_left"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_foot_left"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selected_left"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/iv_foot_right"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:src="@drawable/selected_right"
+        tools:ignore="ContentDescription"/>
+
+    <Button
+        android:id="@+id/bt_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="重新加载"
+        android:visibility="gone"/>
+</RelativeLayout>

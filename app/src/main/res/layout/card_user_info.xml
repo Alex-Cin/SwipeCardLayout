@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg9_normal"
+                tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/logo_circle"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user"
+        android:padding="16dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:text="某些综艺节目名和书籍也以你好命名，如你们舞蹈。也有歌曲以此命名，如你们好。某些综艺节目名和书籍也以你好命名，如你们舞蹈。也有歌曲以此命名，如你们好。"
+        android:textColor="#A3A3A3"/>
+
+    <ImageView
+        android:id="@+id/iv_swipe_left"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selected_left"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/iv_swipe_right"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:src="@drawable/selected_right"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>
